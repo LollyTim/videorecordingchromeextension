@@ -1,27 +1,21 @@
-// import logo from "../../assets/logo.png";
-// import setting from "../../assets/icons/setting.svg";
-// import close_pop from "../../assets/icons/close-circle.svg"
-// import tab from "../../assets/icons/tab_pop.svg"
-// import camera from "../../assets/icons/video-camera.svg"
-// import audio from "../../assets/icons/audio.svg"
 import React from "react";
 
-const popup = () => {
+const Popup = () => {
   return (
-    <section className="w-full h-full flex justify-center">
+    <section className="w-full h-full flex justify-center items-center">
       <section className="w-1/4 h-fit shadow-xl rounded-3xl p-7 flex flex-col justify-center gap-7">
         <header className="flex justify-between ">
           <span className="flex gap-3 items-center font-inter">
             <a href="/index" className="flex gap-3 items-center ">
-              <img src="../../assets/logo.png" />
+              <img src="logo1.png" alt="logo"/>
               <p className="text-dark_blue font-semibold text-base">
                 HelpMeOut
               </p>
             </a>
           </span>
-          <span className="flex gap-6">
-            <img src="{setting}" />
-            <img src="{close_pop}" />
+          <span className="flex gap-6 justify-center mt-2">
+            <img src="setting-2.png" alt="settings " className=" w-6 h-6"/>
+            <img src="close-circle.png" alt="closeic" className=" w-6 h-6"/>
           </span>
         </header>
 
@@ -29,12 +23,12 @@ const popup = () => {
           This extension helps you record and share help videos with ease.
         </p>
 
-        <img src="{tab} "/>
+        <img src="Frame 4619.png " alt="pidesss"/>
 
         {/* camera button */}
         <button className="flex justify-between border border-dark_blue p-4 rounded-2xl">
           <span className="flex gap-3">
-            <img src="{camera}" />
+            <img src="video-camera.png" alt="vcam" className=" w-5" />
             <p className="font-work_sans text-lg">Camera</p>
           </span>
           <label className="relative inline-flex items-center cursor-pointer">
@@ -43,10 +37,10 @@ const popup = () => {
           </label>
         </button>
 
-        {/* audio button */}
+        {/* audio button ntn here  */}
         <button className="flex justify-between border border-dark_blue p-4 rounded-2xl">
           <span className="flex gap-3">
-            <img src="{audio}" />
+            <img src="microphone.png" alt="audioice" className=" w-5" />
             <p className="font-work_sans text-lg">Audio</p>
           </span>
           <label className="relative inline-flex items-center cursor-pointer">
@@ -55,7 +49,7 @@ const popup = () => {
           </label>
         </button>
 
-        {/* start recording */}
+        {/* start recording brn here */}
 
         <button className="bg-dark_blue text-white font-work_sans text-lg py-4 rounded-2xl">Start Recording</button>
       </section>
@@ -63,4 +57,4 @@ const popup = () => {
   );
 };
 
-export default popup;
+export default Popup;
