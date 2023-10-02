@@ -29,6 +29,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .works__icon {
   width: 60px;
   height: 60px;
@@ -36,11 +37,12 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color: var(--color-blue);
+  background-color: #120B48;
   border-radius: 100%;
   margin-bottom: 32px;
   flex-shrink: 0;
 }
+
 .works__icon p {
   color: white;
   text-align: center;
@@ -52,7 +54,7 @@
 }
 
 .work__title {
-  color: var(--color-blue);
+  color: #120B48;
   text-align: center;
   font-family: var(--font-sans);
   font-size: 26px;
@@ -79,6 +81,7 @@
   height: 251.481px;
   flex-shrink: 0;
 }
+
 @media screen and (max-width: 1600px) {
   .section__works {
     padding: 4rem 2rem;

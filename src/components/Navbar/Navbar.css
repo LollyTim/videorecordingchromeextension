@@ -6,12 +6,15 @@
   padding: 1rem 10%;
   background-color: white;
   margin-bottom: 2px;
+  color: #120B48;
 }
 
 .nav__logo {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .nav__logo img {
@@ -20,7 +23,7 @@
 }
 
 .nav__logo h3 {
-  color: var(--color-blue);
+  color: #120B48;
   font-family: var(--font-sora);
   font-size: 16px;
   font-style: normal;
@@ -33,6 +36,9 @@
   align-items: center;
   padding: 10px 20px;
   gap: 39px;
+  color: #120B48;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .nav__links a {
@@ -41,6 +47,9 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  color: #120B48;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .getStarted {
@@ -51,6 +60,9 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  color: #120B48;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 1600px) {

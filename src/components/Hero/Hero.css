@@ -39,7 +39,7 @@
   align-items: center;
   gap: 10px;
   border-radius: 8px;
-  background-color: var(--color-blue);
+  background-color: #120B48;
   color: #fff;
   text-align: center;
   font-family: var(--font-sans);
@@ -62,12 +62,14 @@
   opacity: 0.1;
   transition: 0.3s;
 }
+
 .hero__images {
   display: flex;
   gap: 1rem;
   position: relative;
   margin-right: 2rem;
 }
+
 .hero__grid1 {
   display: flex;
   flex-direction: column;
@@ -80,14 +82,17 @@
   height: 216px;
   border-radius: 10px;
 }
+
 .hero__grid2 {
   z-index: 100;
 }
+
 .hero__grid2 img {
   width: 300px;
   height: 448px;
   border-radius: 10px;
 }
+
 .grid1,
 .grid2 {
   position: absolute;
