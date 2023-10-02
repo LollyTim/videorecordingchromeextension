@@ -20,6 +20,10 @@ module.exports = {
 			},
 		},
   },
-  plugins: [],
-}
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+    // Other plugins as needed
+  ],
+};
 

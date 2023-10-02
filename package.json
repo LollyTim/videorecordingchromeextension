@@ -7,8 +7,16 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
+    "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
+    "usehooks-ts": "^2.9.1",
     "web-vitals": "^3.5.0"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,6 +45,8 @@
   "devDependencies": {
     "@types/react": "^18.2.23",
     "@types/react-dom": "^18.2.8",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"

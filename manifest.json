@@ -3,17 +3,30 @@
 	"name": "HelpMeOut",
     "description": "It can record a user's screen and send the recorded content to a specific online location {endpoint}",
 	"icons": {
-		"128": "logo1.png"
+		"128": "./logo.png"
 	},
 	"version": "1.0.1",
     "action": {
-        "default_popup": "index.html",
+        "default_popup": "public/popup.html",
+        "default_title": "HelpMeOut",
         "default_icon": {
-            "16":"logo1.png"
+            "16":"./logo.png"
         }
     },
-    
-    "permissions": ["scripting", "tabs", "activeTab"],
+     "background": {
+        "service_worker": "background.js"
+    },
+     "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./content.js"],
+      "css": ["public/main.css"],
+      "run_at": "document_start"
+    }
+  ],
+  
+    "permissions": ["scripting", "tabs", "activeTab", "desktopCapture"],
+                   
     "host_permissions": [
         "http://*/*",
         "https://*/*"
